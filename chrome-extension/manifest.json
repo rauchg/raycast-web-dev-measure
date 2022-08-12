@@ -1,0 +1,16 @@
+{
+  "name": "Web.dev audit automation",
+  "description": "Tests opened on web.dev are automatically run without an extra click",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "128": "lighthouse.png"
+  },
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://web.dev/measure/"],
+  "action": {}
+}
