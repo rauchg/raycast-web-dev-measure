@@ -1,5 +1,5 @@
 {
-  "name": "Web.dev audit automation",
+  "name": "PageSpeed Insights audit automation",
   "description": "Tests opened on web.dev are automatically run without an extra click",
   "version": "0.1",
   "manifest_version": 3,
@@ -11,6 +11,6 @@
     "128": "lighthouse.png"
   },
   "permissions": ["scripting", "tabs"],
-  "host_permissions": ["https://web.dev/measure/"],
+  "host_permissions": ["https://pagespeed.web.dev/"],
   "action": {}
 }

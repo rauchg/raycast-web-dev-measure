@@ -1,7 +1,7 @@
-# Lighthouse Raycast test automation
+# PageSpeed Insights Raycast test automation
 
-This script registers a command "measure" "URL" that automatically runs a web.dev audit of the target URL.
-It comes with a companion Chrome Extension that automates clicking the "Run Audit" button for maximum productivity.
+This script registers a command "measure" "URL" that automatically runs a PageSpeed Insights audit of the target URL.
+It comes with a companion Chrome Extension that automates clicking the "Analyze" button for maximum productivity.
 
 ## Installing
 

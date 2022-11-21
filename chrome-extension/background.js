@@ -8,7 +8,7 @@ async function getCurrentTab() {
 
 chrome.tabs.onUpdated.addListener(function (_tabId, _changeInfo, tab) {
   console.log(tab);
-  if (tab.url.includes("https://web.dev/measure/")) {
+  if (tab.url.includes("https://pagespeed.web.dev/")) {
     chrome.scripting.executeScript({
       target: { tabId: tab.id },
       func: runAudit,
@@ -17,8 +17,8 @@ chrome.tabs.onUpdated.addListener(function (_tabId, _changeInfo, tab) {
 });
 
 function runAudit(givenName) {
-  const button = document.getElementById("run-lh-button");
-  const input = document.querySelector(".lh-enterurl .lh-input");
+  const button = document.querySelector("form button");
+  const input = document.querySelector("form input");
   if (input.value != "" && button.getAttribute("disabled") !== "disabled") {
     button.click();
   }
